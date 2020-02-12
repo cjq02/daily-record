@@ -1,0 +1,12 @@
+{
+    "type": "postgres",
+    "host": "api.cjq02.com",
+    "port": 5434,
+    "username": "postgres",
+    "password": "postgres",
+    "database": "daily-record-db",
+    "entities": [
+        "dist/**/*.entity{.ts,.js}"
+    ],
+    "synchronize": true
+}
