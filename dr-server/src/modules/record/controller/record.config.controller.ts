@@ -28,7 +28,7 @@ export class RecordConfigController {
     }
 
     @Delete(':id')
-    remove(@Param('id') id: string) {
+    delete(@Param('id') id: string) {
         return this.recordConfigService.delete(id);
     }
 }
