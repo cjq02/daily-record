@@ -1,8 +1,8 @@
-import { PrimaryGeneratedColumn, Column } from 'typeorm';
+import { Column, ObjectIdColumn } from 'typeorm';
 
 export default abstract class BaseEntity {
 
-    @PrimaryGeneratedColumn('uuid')
+    @ObjectIdColumn()
     id: string;
 
     @Column({ type: 'timestamp' })

@@ -1,8 +1,8 @@
-import { Entity, Column } from 'typeorm';
-import RecordTypeEnum from '../enumerate/record.type.enum';
+import { Column, Entity } from 'typeorm';
 import BaseEntity from '../base/base.entity';
+import RecordTypeEnum from '../enumerate/record.type.enum';
 
-@Entity("t_dr_record_config")
+@Entity("recordConfig")
 export default class RecordConfigEntity extends BaseEntity {
 
     @Column({ unique: true })
