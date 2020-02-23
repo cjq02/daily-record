@@ -1,6 +1,6 @@
 {
     "type": "mongodb",
-    "host": "localhost",
+    "host": "api.cjq02.com",
     "port": 27017,
     "database": "daily-record-db",
     "username": "cjq",
