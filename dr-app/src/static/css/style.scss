@@ -1,0 +1,204 @@
+// ============ 新增主题颜色 ==========
+.bg-primary {
+	background-color: $u-type-primary;
+}
+.bg-theme{
+	background-color: $u-type-theme;
+}
+.c-black{
+	color: #000;
+}
+.c-gray{
+	color: #606266;
+}
+.fwb{
+	font-weight: bold;
+}
+
+
+// ============ 重置样式 ==========
+uni-page-body {
+  height: 100%;
+}
+
+.auto-image {
+  height: auto !important;
+
+  uni-image {
+    overflow: visible;
+
+    > div {
+      display: none;
+    }
+
+    > img {
+      position: relative;
+      opacity: 1;
+      height: auto;
+    }
+  }
+}
+.filter-box{
+	.u-dropdown{
+		&__content{
+			&__popup{
+           box-shadow: 0px 10px 10px -4px rgba(0,0,0,.3);
+		   background-color: #fff;
+			}
+		   &__mask{
+			   display: none;
+		   }
+		}
+	}
+}
+
+checkbox {
+  &.round {
+    .uni-checkbox-input {
+      margin: 0;
+      width: 24px;
+      height: 24px;
+      border-radius: 100 upx;
+    }
+  }
+
+  &.blue {
+    &:not([disabled]) .uni-checkbox-input:hover {
+      border-color: #0081ff !important;
+      color: #fff !important;
+    }
+
+    .uni-checkbox-input-checked {
+      background-color: #0081ff !important;
+      border-color: #0081ff !important;
+      color: #ffffff !important;
+    }
+  }
+
+  &.green {
+    &:not([disabled]) .uni-checkbox-input:hover {
+      border-color: rgba(0, 150, 136, 1) !important;
+      color: #fff !important;
+    }
+
+    .uni-checkbox-input-checked {
+      background-color: rgba(0, 150, 136, 1) !important;
+      border-color: rgba(0, 150, 136, 1) !important;
+      color: #ffffff !important;
+    }
+  }
+}
+
+/* ==================
+             公共
+     ==================== */
+.ellipsis{//省略号
+	overflow: hidden;
+	text-overflow:ellipsis;
+	white-space: nowrap;
+	word-break: break-all;
+}
+.flex {
+  display: flex;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+/* ==================
+              flex布局(colorui里面也有相关基础样式)
+     ==================== */
+/* x水平排列*/
+.x-f {
+  display: flex;
+  align-items: center; //垂直居中
+}
+
+/*x两端且水平居中*/
+.x-bc {
+  display: flex;
+  justify-content: space-between; /*水平居中*/
+  align-items: center; //垂直居中
+}
+
+/*x平分且水平居中*/
+.x-ac {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/*x水平靠上对齐*/
+.x-start {
+  display: flex;
+  align-items: flex-start;
+}
+
+/*x水平靠下对齐*/
+.x-end {
+  display: flex;
+  align-items: flex-end;
+}
+
+/*上下左右居中*/
+.x-c {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*y竖直靠左*/
+.y-start {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*y竖直靠右*/
+.y-end {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+/*y竖直居中*/
+.y-f {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+// y竖直两端
+.y-b {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+/*y竖直两端居中*/
+.y-bc {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*单行文本溢出省略号*/
+.one-t {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: all linear 0.2s;
+}
+
+/*多行文本溢出省略号*/
+.more-t {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  word-break: break-all;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  transition: all linear 0.2s;
+}

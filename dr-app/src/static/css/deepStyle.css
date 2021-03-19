@@ -1,0 +1,10 @@
+/*
+深度穿透组件样式
+ */
+/deep/ uni-button[type=warn] {
+	background-color: #e4251b;
+}
+
+/deep/ .u-model__footer__button+.u-model__footer__button {
+	border-left: 1px solid #e4e7ed;
+}

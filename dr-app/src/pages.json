@@ -1,16 +1,113 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"easycom": {
+		"autoscan": true,
+		"custom": {
+			"^u-(.*)-ext": "@/components/uview-ui-ext/u-$1/u-$1-ext.vue",
+			"^u-(.*)": "@/uview-ui/components/u-$1/u-$1.vue",
+			// uni-ui 规则如下配置
+			"^uni-(.*)": "@dcloudio/uni-ui/lib/uni-$1/uni-$1.vue"
+		}
+	},
+	"pages": [
+		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
 		{
-			"path": "pages/record/config",
+			"path": "pages/loan/index",
 			"style": {
-				"navigationBarTitleText": "uni-app"
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/loan/repay/index",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "black"
+			}
+		},
+		{
+			"path": "pages/loan/credit/index",
+			"style": {
+				"navigationStyle": "custom", // 隐藏系统导航栏
+				"navigationBarTextStyle": "black"
 			}
 		}
 	],
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
-		"backgroundColor": "#F8F8F8"
+		"navigationBarBackgroundColor": "#e4251b",
+		"navigationBarTextStyle": "white"
+	},
+	"tabBar": {
+		"color": "#333333",
+		"backgroundColor": "#F8F8F8",
+		"selectedColor": "#e4251b",
+		"list": [{
+				"index": 0,
+				"pagePath": "pages/reader/home",
+				"text": "首页",
+				"iconPath": "static/images/tabbar/home.png",
+				"selectedIconPath": "static/images/tabbar/home-fill.png"
+			},
+			{
+				"index": 1,
+				"pagePath": "pages/reader/store/store",
+				"text": "书店",
+				"iconPath": "/static/images/tabbar/group-book.png",
+				"selectedIconPath": "/static/images/tabbar/group-book-fill.png"
+			},
+			{
+				"index": 2,
+				"pagePath": "pages/reader/book/book",
+				"text": "书籍",
+				"iconPath": "static/images/tabbar/book.png",
+				"selectedIconPath": "static/images/tabbar/book-fill.png"
+			},
+			{
+				"index": 3,
+				"pagePath": "pages/reader/activity/activity",
+				"text": "活动",
+				"iconPath": "static/images/tabbar/activity.png",
+				"selectedIconPath": "static/images/tabbar/activity-fill.png"
+			},
+			{
+				"index": 4,
+				"pagePath": "pages/reader/mine",
+				"text": "我的",
+				"iconPath": "static/images/tabbar/mine.png",
+				"selectedIconPath": "static/images/tabbar/mine-fill.png"
+			}
+		]
+		/* "list": [{
+		        "pagePath": "pages/index/index",
+		        "text": "首页",
+		        "iconPath": "static/images/tabbar/home.png",
+		        "selectedIconPath": "static/images/tabbar/home-fill.png"
+		    },
+		    {
+		        "pagePath": "pages/store/activity/activityManage",
+		        "text": "活动",
+		        "iconPath": "static/images/tabbar/activity.png",
+		        "selectedIconPath": "static/images/tabbar/activity-fill.png"
+		    },
+		    {
+		        "pagePath": "pages/store/book/bookList",
+		        "text": "书籍",
+		        "iconPath": "static/images/tabbar/book.png",
+		        "selectedIconPath": "static/images/tabbar/book-fill.png"
+		    },
+		    {
+		        "pagePath": "pages/test/menu",
+		        "text": "拼书",
+		        "iconPath": "static/images/tabbar/group-book.png",
+		        "selectedIconPath": "static/images/tabbar/group-book-fill.png"
+		    },
+		    {
+		        "pagePath": "pages/store/mine",
+		        "text": "我的",
+		        "iconPath": "static/images/tabbar/mine.png",
+		        "selectedIconPath": "static/images/tabbar/mine-fill.png"
+		    }
+		] */
 	}
 }

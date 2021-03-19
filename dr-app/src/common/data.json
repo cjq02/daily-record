@@ -1,0 +1,68 @@
+{
+	"roleTypeList": [{
+			"code": "7",
+			"name": "读者"
+		},
+		{
+			"code": "2",
+			"name": "书店"
+		}
+	],
+
+	"isMatchList": [{
+			"code": "1",
+			"name": "一致"
+		},
+		{
+			"code": "0",
+			"name": "不一致"
+		}
+	],
+
+	"activityUploadStatus": [{
+			"code": "0",
+			"cls": "upload-disabled",
+			"text": "上传"
+		},
+		{
+			"code": "1",
+			"cls": "uploading",
+			"text": "上传"
+		},
+		{
+			"code": "2",
+			"cls": "uploaded",
+			"text": "已上传"
+		},
+		{
+			"code": "3",
+			"cls": "uploaded",
+			"text": "编辑"
+		}
+	],
+	
+	"invoiceTitleTypeList": [
+		{
+			"code": "1",
+			"name": "个人或者事业单位"
+		},
+		{
+			"code": "2",
+			"name": "企业"
+		}
+	],
+	
+	"invoiceTypeList": [
+		{
+			"code": "0",
+			"name": "增值税普通发票",
+			"checked": true
+		},
+		{
+			"code": "1",
+			"name": "增值税专用发票",
+			"checked": false
+		}
+	]
+
+}
