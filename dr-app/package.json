@@ -61,7 +61,7 @@
     "date-and-time": "^0.14.2",
     "dateformat": "^3.0.3",
     "flyio": "^0.6.2",
-    "lodash": "^4.17.20",
+    "lodash": "^4.17.21",
     "numeral": "^2.0.6",
     "regenerator-runtime": "^0.12.1",
     "vue": "^2.6.11",
